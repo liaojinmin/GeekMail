@@ -1,7 +1,7 @@
 ![alt](https://web-1301331373.cos.ap-guangzhou.myqcloud.com/docs/%E9%80%8Flogo.png)
 # 📬GeekMail-高级邮件系统
 
-### 此版本为免费版，于付费版源码完全不一样，望周知。
+### 此版本为免费版，与付费版源码完全不一样，望周知。
 
 <br/>
 
