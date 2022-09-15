@@ -10,8 +10,10 @@ import me.Geek.api.hook.hookPlugin
 import org.bukkit.Bukkit
 import taboolib.common.env.RuntimeDependencies
 import taboolib.common.env.RuntimeDependency
+import taboolib.common.platform.Platform
 import taboolib.common.platform.Plugin
 import taboolib.common.platform.function.console
+import taboolib.module.metrics.Metrics
 import taboolib.platform.BukkitPlugin
 
 
@@ -24,12 +26,13 @@ import taboolib.platform.BukkitPlugin
 object GeekMail : Plugin() {
 
     val instance by lazy { BukkitPlugin.getInstance() }
-    const val VERSION = 1.08
+    const val VERSION = 1.1
     var plugin_status: Boolean = false
     lateinit var menu: Menu
     lateinit var lang: MaterialChinese
 
     override fun onLoad() {
+        Metrics(16437, VERSION.toString(), Platform.BUKKIT)
         title("")
         title("正在加载 §3§lGeekMail  §f...  §8" + Bukkit.getVersion())
         title("")

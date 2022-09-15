@@ -15,7 +15,8 @@ taboolib {
         "module-nms-util",
         "module-chat",
         "module-kether",
-        "expansion-command-helper"
+        "expansion-command-helper",
+        "module-metrics"
     )
     description {
         contributors {
