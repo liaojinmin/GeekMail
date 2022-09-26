@@ -157,10 +157,10 @@ public final class MailManage {
         int ints = 0;
         double doubles = 0.0;
         if (Ex instanceof Double) {
-            doubles = (Double) Ex;
+            doubles = Double.ValueOf(Ex);
         }
         if (Ex instanceof Integer) {
-            ints = (Integer) Ex;
+            ints = Integer.parseInt(Ex);
         }
         switch (type) {
             case MONEY_MAIL: {
